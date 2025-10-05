@@ -1,12 +1,10 @@
 {
   "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
-  "id": "mentorbot-skill", 
+  "id": "mentorbot-skill",
   "name": "MentorBot Skill",
   "version": "1.0",
   "publisherName": "WeDoIT",
   "description": "MentorBot: Azure OpenAI + Azure Cognitive Search tabanlı Q&A.",
-  "iconUrl": "https://[opsiyonel-bir-ikon-url].png",
-  "tags": [ "qna", "search", "openai", "azure" ],
   "endpoints": [
     {
       "name": "production",
@@ -14,15 +12,5 @@
       "endpointUrl": "https://mentorai-v2-hesap2.azurewebsites.net/api/messages",
       "msAppId": "1eec050a-21f3-4dee-97fd-f10beffff833"
     }
-  ],
-  "activities": {
-    "message": {
-      "description": "General message activity",
-      "type": "message"
-    },
-    "event": {
-      "description": "Event activity",
-      "type": "event"
-    }
-  }
+  ]
 }
