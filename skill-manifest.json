@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
+  "id": "mentorbot-skill", 
+  "name": "MentorBot Skill",
+  "version": "1.0",
+  "publisherName": "[SENİN/ŞİRKETİN ADI]",
+  "description": "MentorBot: Azure OpenAI + Azure Cognitive Search tabanlı Q&A.",
+  "iconUrl": "https://[opsiyonel-bir-ikon-url].png",
+  "tags": [ "qna", "search", "openai", "azure" ],
+  "endpoints": [
+    {
+      "name": "production",
+      "protocol": "BotFrameworkV4",
+      "endpointUrl": "https://[APP-SERVICE-ADIN].azurewebsites.net/api/messages",
+      "msAppId": "[AZURE BOT APP ID]"
+    }
+  ],
+  "activities": {
+    "message": {
+      "description": "General message activity",
+      "type": "message"
+    },
+    "event": {
+      "description": "Event activity",
+      "type": "event"
+    }
+  }
+}
